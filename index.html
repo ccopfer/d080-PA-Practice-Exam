@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>D080 Managing in a Global Business Environment</title>
+  <title>D080 PA Practice Exam</title>
   <style>
     body {
       font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
@@ -70,16 +70,24 @@
       position: relative;
       z-index: 1;
     }
-    #timer {
-      text-align: center;
-      font-size: 1.2rem;
-      color: #003058;
-      margin-bottom: 20px;
-    }
-    #summary, #retake-btn, #print-btn, #export-btn {
+    #summary, #retake-btn, #print-btn, #export-btn, #submit-btn, #feedback {
       display: none;
       margin: 10px auto;
       text-align: center;
+    }
+    #feedback table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    #feedback th, #feedback td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: left;
+    }
+    #feedback th {
+      background-color: #003058;
+      color: white;
     }
     button {
       padding: 10px 20px;
@@ -89,40 +97,43 @@
       color: white;
       font-size: 1rem;
       cursor: pointer;
+      margin: 5px;
     }
     button:hover {
       background-color: #005fa3;
     }
+    #back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #003058;
+      color: white;
+      padding: 10px;
+      border-radius: 50%;
+      font-size: 20px;
+      display: none;
+    }
   </style>
 </head>
 <body>
-  <h1>D080 Practice Exam</h1>
-  <div id="timer">Time: 0:00</div>
+  <h1>D080 PA Practice Exam</h1>
   <div id="progress-container">
     <div id="progress-bar"></div>
     <div id="progress-text">0 / 0 Completed</div>
   </div>
   <div id="quiz-container"></div>
-  <div id="summary"></div>
   <div style="text-align: center;">
+    <button id="submit-btn">Submit Exam</button>
     <button id="retake-btn">Retake Exam</button>
     <button id="print-btn">Print Results</button>
     <button id="export-btn">Export CSV</button>
   </div>
+  <div id="summary"></div>
+  <div id="feedback"></div>
+  <button id="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">&#8679;</button>
 
   <script>
     let quizData;
-    let currentTime = 0;
-    let timerInterval;
-
-    function startTimer() {
-      timerInterval = setInterval(() => {
-        currentTime++;
-        const mins = Math.floor(currentTime / 60);
-        const secs = currentTime % 60;
-        document.getElementById("timer").textContent = `Time: ${mins}:${secs.toString().padStart(2, '0')}`;
-      }, 1000);
-    }
 
     function shuffle(array) {
       for (let i = array.length - 1; i > 0; i--) {
@@ -136,7 +147,6 @@
       .then(data => {
         quizData = data.questions;
         shuffle(quizData);
-        startTimer();
         renderQuiz();
       });
 
@@ -173,6 +183,8 @@
     }
 
     function checkAnswer(qIdx, choiceIdx) {
+      const radios = document.getElementsByName(`q${qIdx}`);
+      radios.forEach(r => r.disabled = true);
       const exp = document.getElementById(`exp${qIdx}`);
       exp.style.display = 'block';
       updateProgress();
@@ -184,25 +196,39 @@
       document.getElementById("progress-bar").style.width = `${(answered / total) * 100}%`;
       document.getElementById("progress-text").textContent = `${answered} / ${total} Completed`;
 
-      if (answered === total) showSummary();
+      if (answered === total) document.getElementById("submit-btn").style.display = 'inline-block';
     }
 
-    function showSummary() {
-      clearInterval(timerInterval);
-      const summary = document.getElementById("summary");
-      const answeredInputs = document.querySelectorAll("input[type='radio']:checked");
+    document.getElementById("submit-btn").onclick = () => {
       let correctCount = 0;
-      answeredInputs.forEach(input => {
-        const qIdx = parseInt(input.name.replace('q', ''));
-        const selected = parseInt(input.value);
-        if (selected === quizData[qIdx].answer) correctCount++;
+      let tableHTML = `<table><tr><th>Question</th><th>Your Answer</th><th>Correct Answer</th><th>Result</th></tr>`;
+
+      quizData.forEach((q, idx) => {
+        const selectedInput = document.querySelector(`input[name='q${idx}']:checked`);
+        const selectedIndex = selectedInput ? parseInt(selectedInput.value) : -1;
+        const selectedText = selectedIndex >= 0 ? q.choices[selectedIndex] : "Not answered";
+        const correctText = q.choices[q.answer];
+        const result = selectedIndex === q.answer ? "Correct" : "Incorrect";
+        if (result === "Correct") correctCount++;
+
+        tableHTML += `<tr>
+          <td>${q.question}</td>
+          <td>${selectedText}</td>
+          <td>${correctText}</td>
+          <td>${result}</td>
+        </tr>`;
       });
-      summary.innerHTML = `<h3 style='text-align:center;'>You answered ${correctCount} out of ${quizData.length} correctly.</h3>`;
-      summary.style.display = 'block';
+      tableHTML += `</table>`;
+
+      document.getElementById("summary").innerHTML = `<h3 style='text-align:center;'>You answered ${correctCount} out of ${quizData.length} correctly.</h3>`;
+      document.getElementById("summary").style.display = 'block';
+      document.getElementById("feedback").innerHTML = tableHTML;
+      document.getElementById("feedback").style.display = 'block';
       document.getElementById("retake-btn").style.display = 'inline-block';
       document.getElementById("print-btn").style.display = 'inline-block';
       document.getElementById("export-btn").style.display = 'inline-block';
-    }
+      document.getElementById("submit-btn").style.display = 'none';
+    };
 
     document.getElementById("retake-btn").onclick = () => location.reload();
     document.getElementById("print-btn").onclick = () => window.print();
@@ -227,6 +253,11 @@
       a.download = 'D080_results.csv';
       a.click();
       URL.revokeObjectURL(url);
+    };
+
+    window.onscroll = () => {
+      const btn = document.getElementById("back-to-top");
+      btn.style.display = window.scrollY > 300 ? 'block' : 'none';
     };
   </script>
 </body>
