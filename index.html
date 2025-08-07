@@ -196,7 +196,8 @@
       exp.style.borderLeft = isCorrect ? '5px solid #2e7d32' : '5px solid #c62828';
 
       const resultText = isCorrect ? 'Correct' : 'Incorrect';
-      exp.innerHTML = `<strong>${resultText}.</strong> The correct answer is '<strong>${correctText}</strong>'.<br>${q.explanation}`;
+      const cleanExplanation = q.explanation.replace(/The correct answer is '.*?'\\.?\\s*/i, '').trim();
+      exp.innerHTML = `<strong>${resultText}.</strong> The correct answer is '<strong>${correctText}</strong>'.<br><em>Explanation:</em> ${cleanExplanation}`;
       exp.style.display = 'block';
       updateProgress();
     }
