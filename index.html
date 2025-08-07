@@ -200,10 +200,15 @@
       });
       const percentCorrect = total > 0 ? Math.round((correctCount / total) * 100) : 0;
       document.getElementById("progress-text").textContent = `${correctCount} / ${total} Correct (${percentCorrect}%)`;
-      if (answered === total) document.getElementById("submit-btn").style.display = 'inline-block';
+      document.getElementById("submit-btn").style.display = 'inline-block';
     }
 
     document.getElementById("submit-btn").onclick = () => {
+      const total = quizData.length;
+      const answered = document.querySelectorAll("input[type='radio']:checked").length;
+      if (answered < total) {
+        alert(`You have answered ${answered} out of ${total} questions. Please complete all questions before submitting for best results.`);
+      }
       let correctCount = 0;
       let tableHTML = `<table><tr><th>Question</th><th>Your Answer</th><th>Correct Answer</th><th>Result</th></tr>`;
       quizData.forEach((q, idx) => {
