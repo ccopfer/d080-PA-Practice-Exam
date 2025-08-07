@@ -6,6 +6,7 @@
   <title>D080 PA Practice Exam</title>
   <style>
     body {
+      padding-top: 70px;
       font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
       background-color: #f4f6f9;
       padding: 20px;
@@ -43,6 +44,11 @@
       display: none;
     }
     #progress-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
       margin: 20px 0;
       background: #003058;
       color: white;
@@ -177,7 +183,9 @@
       explanationBox.style.backgroundColor = isCorrect ? '#e8f5e9' : '#ffebee';
       explanationBox.style.borderLeft = isCorrect ? '5px solid #2e7d32' : '5px solid #c62828';
       const cleanExplanation = q.explanation.replace(/The correct answer is '.*?'\.?\s*/i, '').trim();
-      explanationBox.innerHTML = `<strong>${resultText}.</strong> The correct answer is '<strong>${correctText}</strong>'.<br><em>Explanation:</em> ${cleanExplanation}`;
+      explanationBox.innerHTML = isCorrect
+        ? `<div><strong>Correct!</strong> ${cleanExplanation}</div>`
+        : `<div><strong>Incorrect.</strong> The correct answer is <strong>${correctText}</strong>. ${cleanExplanation}</div>`;
       updateProgress();
     }
 
