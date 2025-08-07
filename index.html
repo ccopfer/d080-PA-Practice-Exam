@@ -173,7 +173,8 @@
         const explanation = document.createElement("div");
         explanation.className = "explanation";
         explanation.id = `exp${idx}`;
-        explanation.innerText = q.explanation;
+        explanation.innerText = '';
+        explanation.setAttribute("data-question-index", idx);
 
         div.appendChild(choiceDiv);
         div.appendChild(explanation);
@@ -186,8 +187,19 @@
       const radios = document.getElementsByName(`q${qIdx}`);
       radios.forEach(r => r.disabled = true);
       const exp = document.getElementById(`exp${qIdx}`);
+      const q = quizData[qIdx];
+      const selectedText = q.choices[choiceIdx];
+      const correctText = q.choices[q.answer];
+      const isCorrect = choiceIdx === q.answer;
+
+      exp.style.backgroundColor = isCorrect ? '#e8f5e9' : '#ffebee';
+      exp.style.borderLeft = isCorrect ? '5px solid #2e7d32' : '5px solid #c62828';
+
+      const resultText = isCorrect ? 'Correct' : 'Incorrect';
+      exp.innerHTML = `<strong>${resultText}.</strong> The correct answer is '<strong>${correctText}</strong>'.<br>${q.explanation}`;
       exp.style.display = 'block';
       updateProgress();
+    }
     }
 
     function updateProgress() {
