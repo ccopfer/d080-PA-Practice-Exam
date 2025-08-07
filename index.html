@@ -193,7 +193,13 @@
       const total = quizData.length;
       const answered = document.querySelectorAll("input[type='radio']:checked").length;
       document.getElementById("progress-bar").style.width = `${(answered / total) * 100}%`;
-      document.getElementById("progress-text").textContent = `${answered} / ${total} Completed`;
+      let correctCount = 0;
+      quizData.forEach((q, idx) => {
+        const selected = document.querySelector(`input[name='q${idx}']:checked`);
+        if (selected && parseInt(selected.value) === q.answer) correctCount++;
+      });
+      const percentCorrect = total > 0 ? Math.round((correctCount / total) * 100) : 0;
+      document.getElementById("progress-text").textContent = `${correctCount} / ${total} Correct (${percentCorrect}%)`;
       if (answered === total) document.getElementById("submit-btn").style.display = 'inline-block';
     }
 
