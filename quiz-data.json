@@ -128,9 +128,9 @@
        "It is based on the value of gold.",
        "It is based on the U.S. dollar.",
        "It is based on all members' currencies.",
-       "It is based on the value of the five most significant members' currencies."
+       "It is based on the value of the five most significant members currencies."
       ],
-     "correct": "It is based on the value of the five most significant members' currencies.",
+     "correct": "It is based on the value of the five most significant members currencies.",
      "explanation": ""
     },
     {
