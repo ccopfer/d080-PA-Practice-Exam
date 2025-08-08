@@ -173,13 +173,25 @@
       const selected = document.getElementById(`q${qIdx}_c${choiceIdx}`);
       const label = selected.closest("label");
 
+      const correctText = q.choices[q.answer];
+      const feedbackMsg = document.createElement("div");
+      feedbackMsg.style.marginTop = "10px";
+      feedbackMsg.style.fontStyle = "italic";
+      feedbackMsg.style.fontWeight = "bold";
+
       if (choiceIdx === q.answer) {
         label.style.backgroundColor = '#e8f5e9';
         label.style.borderLeft = '5px solid #2e7d32';
+        feedbackMsg.style.color = '#2e7d32';
+        feedbackMsg.textContent = `✅ Correct!`;
       } else {
         label.style.backgroundColor = '#ffebee';
         label.style.borderLeft = '5px solid #c62828';
+        feedbackMsg.style.color = '#c62828';
+        feedbackMsg.textContent = `❌ Incorrect. The correct answer is: ${correctText}`;
       }
+
+      label.parentNode.appendChild(feedbackMsg);
 
       updateProgress();
     }
@@ -197,64 +209,6 @@
       document.getElementById("progress-text").textContent = `${correctCount} / ${total} Correct (${percentCorrect}%)`;
       document.getElementById("submit-btn").style.display = 'inline-block';
     }
-
-    document.getElementById("submit-btn").onclick = () => {
-      const total = quizData.length;
-      const answered = document.querySelectorAll("input[type='radio']:checked").length;
-      if (answered < total) {
-        alert(`You have answered ${answered} out of ${total} questions. Please complete all questions before submitting for best results.`);
-      }
-      let correctCount = 0;
-      let tableHTML = `<table><tr><th>Question</th><th>Your Answer</th><th>Correct Answer</th><th>Result</th></tr>`;
-      quizData.forEach((q, idx) => {
-        const selected = document.querySelector(`input[name='q${idx}']:checked`);
-        const selectedIdx = selected ? parseInt(selected.value) : -1;
-        const selectedText = selectedIdx >= 0 ? q.choices[selectedIdx] : "Not answered";
-        const correctText = q.choices[q.answer];
-        const result = selectedIdx === q.answer ? "Correct" : "Incorrect";
-        if (result === "Correct") correctCount++;
-        tableHTML += `<tr><td>${q.question}</td><td>${selectedText}</td><td>${correctText}</td><td>${result}</td></tr>`;
-      });
-      tableHTML += `</table>`;
-      document.getElementById("summary").innerHTML = `<h3>You answered ${correctCount} out of ${quizData.length} correctly.</h3>`;
-      document.getElementById("summary").style.display = 'block';
-      document.getElementById("feedback").innerHTML = tableHTML;
-      document.getElementById("feedback").style.display = 'block';
-      document.getElementById("retake-btn").style.display = 'inline-block';
-      document.getElementById("print-btn").style.display = 'inline-block';
-      document.getElementById("export-btn").style.display = 'inline-block';
-      document.getElementById("submit-btn").style.display = 'none';
-    };
-
-    document.getElementById("retake-btn").onclick = () => location.reload();
-    document.getElementById("print-btn").onclick = () => window.print();
-    document.getElementById("export-btn").onclick = () => {
-      const rows = quizData.map((q, idx) => {
-        const input = document.querySelector(`input[name='q${idx}']:checked`);
-        const selected = input ? parseInt(input.value) : -1;
-        return [
-          `Q${idx + 1}`,
-          q.question,
-          q.choices[selected] || "Not answered",
-          q.choices[q.answer],
-          selected === q.answer ? "Correct" : "Incorrect"
-        ];
-      });
-      let csv = "Question,Your Answer,Correct Answer,Result\n";
-      rows.forEach(r => csv += r.join(",") + "\n");
-      const blob = new Blob([csv], { type: 'text/csv' });
-      const url = URL.createObjectURL(blob);
-      const a = document.createElement('a');
-      a.href = url;
-      a.download = 'D080_results.csv';
-      a.click();
-      URL.revokeObjectURL(url);
-    };
-
-    window.onscroll = () => {
-      const btn = document.getElementById("back-to-top");
-      btn.style.display = window.scrollY > 300 ? 'block' : 'none';
-    };
   </script>
 </body>
 </html>
