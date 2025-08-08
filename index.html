@@ -47,33 +47,37 @@
       color: red;
     }
     #progress-container {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      z-index: 999;
-      background-color: #003058;
-      border-bottom: 2px solid #002040;
-      height: 30px;
-      overflow: hidden;
-    }
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  background-color: #003058;
+  z-index: 1000;
+}
     #progress-bar {
-      height: 100%;
-      background-color: #00b386;
-      width: 0%;
-      transition: width 0.3s;
-    }
+  height: 100%;
+  width: 0%;
+  background-color: #00b386;
+  transition: width 0.3s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
     #progress-text {
-      position: absolute;
-      width: 100%;
-      text-align: center;
-      line-height: 30px;
-      font-weight: bold;
-      color: white;
-      font-size: 1rem;
-      background: transparent;
-      z-index: 1000;
-    }
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  line-height: 30px;
+  font-weight: bold;
+  color: white;
+  font-size: 1rem;
+  z-index: 1;
+  pointer-events: none;
+}
     button {
       display: block;
       margin: 60px auto 40px auto;
@@ -105,7 +109,7 @@
 <body>
   <div id="progress-container">
     <div id="progress-bar"></div>
-    <div id="progress-text">0%</div>
+    <div id="progress-text">Score: 0/0 (0%) | Remaining: 0</div>
   </div>
   <h1 id="quiz-title">Loading Quiz...</h1>
   <div id="quiz-container"></div>
@@ -122,6 +126,7 @@
         quizData = data.questions.sort(() => Math.random() - 0.5);
         document.getElementById('quiz-title').innerText = 'D080 PA Practice Exam';
         loadQuiz();
+        updateProgress();
       });
 
     function loadQuiz() {
@@ -172,13 +177,35 @@
 
     function updateProgress() {
       const total = quizData.length;
-      const correctCount = Object.entries(answers).filter(([index, selected]) => {
-        const q = quizData[index];
-        return selected.trim() === q.correct.trim();
-      }).length;
-      const percent = Math.round((correctCount / total) * 100);
-      document.getElementById('progress-bar').style.width = `${percent}%`;
-      document.getElementById('progress-text').textContent = `Score: ${correctCount}/${total} (${percent}%)`;
+      let answered = 0;
+      let correctCount = 0;
+
+      quizData.forEach((q, index) => {
+        const selected = answers[index];
+        if (selected !== undefined) {
+          answered++;
+          if (selected.trim() === q.correct.trim()) {
+            correctCount++;
+          }
+        }
+      });
+
+      const percent = total > 0 ? Math.round((correctCount / total) * 100) : 0;
+      const remaining = total - answered;
+      const progressText = `Score: ${correctCount}/${total} (${percent}%) | Remaining: ${remaining}`;
+
+      const progressBar = document.getElementById('progress-bar');
+      const progressDisplay = document.getElementById('progress-text');
+      progressBar.style.width = `${percent}%`;
+      progressDisplay.textContent = progressText;
+
+      if (percent >= 80) {
+        progressBar.style.backgroundColor = '#00b386'; // green
+      } else if (percent >= 60) {
+        progressBar.style.backgroundColor = '#f0ad4e'; // yellow-orange
+      } else {
+        progressBar.style.backgroundColor = '#d9534f'; // red
+      }
     }
 
     document.getElementById('submit-button').addEventListener('click', () => {
