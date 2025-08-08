@@ -6,7 +6,6 @@
   <title>D080 PA Practice Exam</title>
   <style>
     body {
-      padding-top: 60px;
       padding-top: 70px;
       font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
       background-color: #f4f6f9;
@@ -37,12 +36,6 @@
     }
     .choices input[type="radio"] {
       margin-right: 10px;
-    }
-    .explanation {
-      padding: 10px;
-      margin-top: 10px;
-      border-radius: 4px;
-      display: none;
     }
     #progress-container {
       position: fixed;
@@ -166,11 +159,7 @@
             </label>
           `;
         });
-        const explanation = document.createElement("div");
-        explanation.className = "explanation";
-        explanation.id = `exp${idx}`;
         div.appendChild(choiceDiv);
-        div.appendChild(explanation);
         container.appendChild(div);
       });
       updateProgress();
@@ -180,17 +169,6 @@
       const q = quizData[qIdx];
       const radios = document.getElementsByName(`q${qIdx}`);
       radios.forEach(r => r.disabled = true);
-      const explanationBox = document.getElementById(`exp${qIdx}`);
-      const correctText = q.choices[q.answer];
-      const isCorrect = choiceIdx === q.answer;
-      const resultText = isCorrect ? 'Correct' : 'Incorrect';
-      explanationBox.style.display = 'block';
-      explanationBox.style.backgroundColor = isCorrect ? '#e8f5e9' : '#ffebee';
-      explanationBox.style.borderLeft = isCorrect ? '5px solid #2e7d32' : '5px solid #c62828';
-      const cleanExplanation = q.explanation.replace(/The correct answer is '.*?'\.?\s*/i, '').trim();
-      explanationBox.innerHTML = isCorrect
-        ? `<div><strong>Correct!</strong> ${cleanExplanation}</div>`
-        : `<div><strong>Incorrect.</strong> The correct answer is <strong>${correctText}</strong>. ${cleanExplanation}</div>`;
       updateProgress();
     }
 
