@@ -1,845 +1,845 @@
 {
- "title":"D080 Managing in a Global Business Environment",
+ "title": "D080 Managing in a Global Business Environment",
  "questions": [
     {
      "id": 1,
-     "question":"Which negative outcome on political systems comes from globalization?",
+     "question": "Which negative outcome on political systems comes from globalization?",
      "choices": [
        "Increase in the number of laws",
        "Increase in the amount of taxes",
        "Creation of isolationist policies",
        "Creation of translation problems"
       ],
-     "correct":"Creation of isolationist policies",
-     "explanation":""
+     "correct": "Creation of isolationist policies",
+     "explanation": ""
     },
     {
      "id": 2,
-     "question":"Which factor results in a higher rate of globalization?",
+     "question": "Which factor results in a higher rate of globalization?",
      "choices": [
        "Reduced trade barriers",
        "Lower cross-border migration",
        "Higher costs of doing business",
        "Decreased direct foreign investment"
       ],
-     "correct":"Reduced trade barriers",
-     "explanation":""
+     "correct": "Reduced trade barriers",
+     "explanation": ""
     },
     {
      "id": 3,
-     "question":"What are the four factors in Ghemawat's CAGE analysis?",
+     "question": "What are the four factors in Ghemawat's CAGE analysis?",
      "choices": [
        "Culture, administration, government, environment",
        "Culture, agriculture, government, economy",
        "Culture, agriculture, geography, environment",
        "Culture, administration, geography, economy"
       ],
-     "correct":"Culture, administration, geography, economy",
-     "explanation":""
+     "correct": "Culture, administration, geography, economy",
+     "explanation": ""
     },
     {
      "id": 4,
-     "question":"What is a major drawback to the home country when companies outsource manufacturing jobs to countries with lower worker wages?",
+     "question": "What is a major drawback to the home country when companies outsource manufacturing jobs to countries with lower worker wages?",
      "choices": [
        "Higher taxes",
        "Loss of manufacturing jobs",
        "Increased manufacturing costs",
        "Decreased focus on research and development"
       ],
-     "correct":"Loss of manufacturing jobs",
-     "explanation":""
+     "correct": "Loss of manufacturing jobs",
+     "explanation": ""
     },
     {
      "id": 5,
-     "question":"A country has a characteristic traditional economic system with poor infrastructure and limited economic opportunity. What is the impact of this system on the process of globalization?",
+     "question": "A country has a characteristic traditional economic system with poor infrastructure and limited economic opportunity. What is the impact of this system on the process of globalization?",
      "choices": [
        "The globalization process is unaffected as the system does not hinder the process.",
        "The globalization process has shortcomings as there are conflicts with other countries.",
        "The globalization process is at a disadvantage as the country has a lower standard of living.",
        "The globalization process is steady as the country is not vulnerable to the impact of globalization."
       ],
-     "correct":"The globalization process is at a disadvantage as the country has a lower standard of living.",
-     "explanation":""
+     "correct": "The globalization process is at a disadvantage as the country has a lower standard of living.",
+     "explanation": ""
     },
     {
      "id": 6,
-     "question":"What is a characteristic of a market economy?",
+     "question": "What is a characteristic of a market economy?",
      "choices": [
        "Government regulation is abundant.",
        "Production is based on traditions.",
        "Goods and services are publicly owned.",
        "Firms seek to maximize profits."
       ],
-     "correct":"Firms seek to maximize profits.",
-     "explanation":""
+     "correct": "Firms seek to maximize profits.",
+     "explanation": ""
     },
     {
      "id": 7,
-     "question":"Which impact does Islamic law directly have on businesses?",
+     "question": "Which impact does Islamic law directly have on businesses?",
      "choices": [
        "It forbids charging interest.",
        "It commercializes the legal system.",
        "It prohibits sale-buyback of businesses.",
        "It limits the globalization of business."
       ],
-     "correct":"It forbids charging interest.",
-     "explanation":""
+     "correct": "It forbids charging interest.",
+     "explanation": ""
     },
     {
      "id": 8,
-     "question":"Which institution helps to maintain availability of global financing to solve trade deficit issues?",
+     "question": "Which institution helps to maintain availability of global financing to solve trade deficit issues?",
      "choices": [
        "The World Bank",
        "The Federal Reserve",
        "International Monetary Fund",
        "International Finance Corporation"
       ],
-     "correct":"International Monetary Fund",
-     "explanation":""
+     "correct": "International Monetary Fund",
+     "explanation": ""
     },
     {
      "id": 9,
-     "question":"What is the current focus of the World Bank?",
+     "question": "What is the current focus of the World Bank?",
      "choices": [
        "Maximizing profitability",
        "Improving quality of life",
        "Supporting structural development",
        "Maintaining equity between developing economies"
       ],
-     "correct":"Improving quality of life",
-     "explanation":""
+     "correct": "Improving quality of life",
+     "explanation": ""
     },
     {
      "id": 10,
-     "question":"For which concern has the World Trade Organization been criticized?",
+     "question": "For which concern has the World Trade Organization been criticized?",
      "choices": [
        "Adoption of labor standards protecting labor rights",
        "Impact of tariffs set by developing nations",
        "Impact of high tariffs on agricultural products",
        "Influence of free trade policies on human trafficking"
       ],
-     "correct":"Adoption of labor standards protecting labor rights",
-     "explanation":""
+     "correct": "Adoption of labor standards protecting labor rights",
+     "explanation": ""
     },
     {
      "id": 11,
-     "question":"How is the Special Drawing Right of the International Monetary Fund (IMF) valued?",
+     "question": "How is the Special Drawing Right of the International Monetary Fund (IMF) valued?",
      "choices": [
        "It is based on the value of gold.",
        "It is based on the U.S. dollar.",
        "It is based on all members' currencies.",
        "It is based on the value of the five most significant members' currencies."
       ],
-     "correct":"It is based on the value of the five most significant members' currencies.",
-     "explanation":""
+     "correct": "It is based on the value of the five most significant members' currencies.",
+     "explanation": ""
     },
     {
      "id": 12,
-     "question":"Two countries agree to open their borders to international business transactions with one another without tariffs. How does this affect global business?",
+     "question": "Two countries agree to open their borders to international business transactions with one another without tariffs. How does this affect global business?",
      "choices": [
        "It imposes import restrictions on competing nations.",
        "It leads to developing free trade policies with strategic partners.",
        "It provides subsidies and protects a critical industry.",
        "It creates a trade surplus for the national economy."
       ],
-     "correct":"It leads to developing free trade policies with strategic partners.",
-     "explanation":""
+     "correct": "It leads to developing free trade policies with strategic partners.",
+     "explanation": ""
     },
     {
      "id": 13,
-     "question":"A country uses its established technology infrastructure to produce a good. What is the impact of this infrastructure on trade?",
+     "question": "A country uses its established technology infrastructure to produce a good. What is the impact of this infrastructure on trade?",
      "choices": [
        "It will improve supply and demand.",
        "It will create barriers to entry for other nations.",
        "It will decrease economies of scale.",
        "It will decrease natural resources."
       ],
-     "correct":"It will create barriers to entry for other nations.",
-     "explanation":""
+     "correct": "It will create barriers to entry for other nations.",
+     "explanation": ""
     },
     {
      "id": 14,
-     "question":"What was the economic impact of the North American Free Trade Agreement (NAFTA)?",
+     "question": "What was the economic impact of the North American Free Trade Agreement (NAFTA)?",
      "choices": [
        "the reduction of economic output as measured by gross domestic product (GDP)",
        "The overall loss of jobs and higher unemployment",
        "The shift of jobs away from low comparative advantage industries",
        "The increase of low-skilled worker employment in the United States"
       ],
-     "correct":"The shift of jobs away from low comparative advantage industries",
-     "explanation":""
+     "correct": "The shift of jobs away from low comparative advantage industries",
+     "explanation": ""
     },
     {
      "id": 15,
-     "question":"A company that is located in Country A would like to sell products in Country B. The government of Country B is pushing for a tariff-based international trade agreement on the product. What is the reasoning behind Country B's decision?",
+     "question": "A company that is located in Country A would like to sell products in Country B. The government of Country B is pushing for a tariff-based international trade agreement on the product. What is the reasoning behind Country B's decision?",
      "choices": [
        "Country B wants Country A to divert trade to another country to help Country A's economy.",
        "Country B seeks to protect its economy and give it the opportunity for long-term expansion.",
        "Country B prefers to divert trade to another country to enhance its product industry.",
        "Country B wants to expand its export to Country A in the product industry."
       ],
-     "correct":"Country B seeks to protect its economy and give it the opportunity for long-term expansion.",
-     "explanation":""
+     "correct": "Country B seeks to protect its economy and give it the opportunity for long-term expansion.",
+     "explanation": ""
     },
     {
      "id": 16,
-     "question":"Countries A and B participate in trade agreements that allow free trade among participant countries. However, Country A imposed quotas on several imported products to protect its domestic products. What is the effect, if any, on the domestic prices of these products?",
+     "question": "Countries A and B participate in trade agreements that allow free trade among participant countries. However, Country A imposed quotas on several imported products to protect its domestic products. What is the effect, if any, on the domestic prices of these products?",
      "choices": [
        "Increases",
        "Decreases",
        "Stays the same",
        "Cannot be determined"
       ],
-     "correct":"Increases",
-     "explanation":""
+     "correct": "Increases",
+     "explanation": ""
     },
     {
      "id": 17,
-     "question":"Two countries decide to open up trade with each other. What is likely to happen when trade opens up?",
+     "question": "Two countries decide to open up trade with each other. What is likely to happen when trade opens up?",
      "choices": [
        "Economies of scale in comparative advantage industries will decrease.",
        "Jobs will increase in non-comparative advantage industries.",
        "Jobs will increase in comparative advantage industries.",
        "Productivity in comparative and non-comparative advantage industries will decrease."
       ],
-     "correct":"Jobs will increase in comparative advantage industries.",
-     "explanation":""
+     "correct": "Jobs will increase in comparative advantage industries.",
+     "explanation": ""
     },
     {
      "id": 18,
-     "question":"What is a purpose of a country implementing trade protectionism?",
+     "question": "What is a purpose of a country implementing trade protectionism?",
      "choices": [
        "To increase dumping",
        "To protect an infant industry",
        "To increase competition",
        "To protect against import subsidies"
       ],
-     "correct":"To protect an infant industry",
-     "explanation":""
+     "correct": "To protect an infant industry",
+     "explanation": ""
     },
     {
      "id": 19,
-     "question":"Country A and Country B are trying to mend their relationship. A company from Country A would like to invest in a company in Country B. Which action by Country B will help these two countries meet their goal?",
+     "question": "Country A and Country B are trying to mend their relationship. A company from Country A would like to invest in a company in Country B. Which action by Country B will help these two countries meet their goal?",
      "choices": [
        "Provide tax exemptions",
        "Increase trade tariffs",
        "Limit privatization policies",
        "Create protectionist policies"
       ],
-     "correct":"Provide tax exemptions",
-     "explanation":""
+     "correct": "Provide tax exemptions",
+     "explanation": ""
     },
     {
      "id": 20,
-     "question":"Which level of regional economic integration is a key feature of a Customs Union?",
+     "question": "Which level of regional economic integration is a key feature of a Customs Union?",
      "choices": [
        "Unified trading policies with non-members",
        "Removal of all barriers to economic integration",
        "Control of capital closed within each member country",
        "Unified political policies within each member country"
       ],
-     "correct":"Unified trading policies with non-members",
-     "explanation":""
+     "correct": "Unified trading policies with non-members",
+     "explanation": ""
     },
     {
      "id": 21,
-     "question":"What is a drawback of creating regional trade agreements?",
+     "question": "What is a drawback of creating regional trade agreements?",
      "choices": [
        "They discourage trade with less efficient producers.",
        "They push cultural diversity between member countries.",
        "They maintain tariff protection for small firms.",
        "They shift employment opportunities."
       ],
-     "correct":"They shift employment opportunities.",
-     "explanation":""
+     "correct": "They shift employment opportunities.",
+     "explanation": ""
     },
     {
      "id": 22,
-     "question":"The United States\u2013Mexico\u2013 Canada Agreement (USMCA), a modification of the North American Free Trade Agreement (NAFTA), broadened the scope of free-trade between member nations and tightened restrictions in the region. Which regulation was established by this new agreement?",
+     "question": "The United States\u2013Mexico\u2013 Canada Agreement (USMCA), a modification of the North American Free Trade Agreement (NAFTA), broadened the scope of free-trade between member nations and tightened restrictions in the region. Which regulation was established by this new agreement?",
      "choices": [
        "Almost half of all automobile parts must be made by a labor force that earns a minimum of $16 per hour by 2023.",
        "100% of all automobile parts must be manufactured within the regions of Mexico, Canada, and the United States.",
        "All dairy products produced in Canada, Mexico, or the United States must be traded with no tariffs.",
        "Member countries may negotiate with foreign exporters to lower tariffs on their imports."
       ],
-     "correct":"Almost half of all automobile parts must be made by a labor force that earns a minimum of $16 per hour by 2023.",
-     "explanation":""
+     "correct": "Almost half of all automobile parts must be made by a labor force that earns a minimum of $16 per hour by 2023.",
+     "explanation": ""
     },
     {
      "id": 23,
-     "question":"A U.S. capital investment firm is researching new markets to enter to diversify its portfolio. The director of foreign investments presented a pitch to the board of directors encouraging entry into the Costa Rican telecommunications market by investing in local companies in the region through acquisition. Which alliance supports this director's suggestion?",
+     "question": "A U.S. capital investment firm is researching new markets to enter to diversify its portfolio. The director of foreign investments presented a pitch to the board of directors encouraging entry into the Costa Rican telecommunications market by investing in local companies in the region through acquisition. Which alliance supports this director's suggestion?",
      "choices": [
        "Free Trade Area of the Americas",
        "Central America Free Trade Agreement",
        "Canada-Costa Rica Free Trade Agreement",
        "International Monetary Fund"
       ],
-     "correct":"Central America Free Trade Agreement",
-     "explanation":""
+     "correct": "Central America Free Trade Agreement",
+     "explanation": ""
     },
     {
      "id": 24,
-     "question":"A firm based in Country A manufactures its products in Country B and pays the manufacturing employees in the currency in which they are located. Which currency situation will result in the maximum profit for the firm?",
+     "question": "A firm based in Country A manufactures its products in Country B and pays the manufacturing employees in the currency in which they are located. Which currency situation will result in the maximum profit for the firm?",
      "choices": [
        "The currency in Country A is weak relative to the currency of Country B.",
        "The currency in Country A is strong relative to the currency in Country B.",
        "The value of the currency in both countries decrease.",
        "The value of the currency in both countries stays the same."
       ],
-     "correct":"The currency in Country A is strong relative to the currency in Country B.",
-     "explanation":""
+     "correct": "The currency in Country A is strong relative to the currency in Country B.",
+     "explanation": ""
     },
     {
      "id": 25,
-     "question":"Which drawback is associated with regional economic integration?",
+     "question": "Which drawback is associated with regional economic integration?",
      "choices": [
        "Lower prices for consumer products",
        "Greater movement of labor",
        "Increased exclusive internal trade",
        "Specialization based on comparative advantage"
       ],
-     "correct":"Increased exclusive internal trade",
-     "explanation":""
+     "correct": "Increased exclusive internal trade",
+     "explanation": ""
     },
     {
      "id": 26,
-     "question":"Which factor contributes to the creation of a monopoly?",
+     "question": "Which factor contributes to the creation of a monopoly?",
      "choices": [
        "Control of natural resources",
        "Strong prime interest rates",
        "Highly educated employees",
        "Vertically integrated organizations"
       ],
-     "correct":"Control of natural resources",
-     "explanation":""
+     "correct": "Control of natural resources",
+     "explanation": ""
     },
     {
      "id": 27,
-     "question":"Which convention provides gap fillers for terms that may not be expressly stated in agreements between two companies?",
+     "question": "Which convention provides gap fillers for terms that may not be expressly stated in agreements between two companies?",
      "choices": [
        "The Common Law",
        "Uniform Commercial Code",
        "Contracts for the International Sale of Goods",
        "International treaties between the home countries of the companies"
       ],
-     "correct":"Contracts for the International Sale of Goods",
-     "explanation":""
+     "correct": "Contracts for the International Sale of Goods",
+     "explanation": ""
     },
     {
      "id": 28,
-     "question":"Which laws are violated by practices such as price-fixing, price discrimination, restraints, and monopolization?",
+     "question": "Which laws are violated by practices such as price-fixing, price discrimination, restraints, and monopolization?",
      "choices": [
        "Production",
        "Anti-trust",
        "Contract",
        "Intellectual property"
       ],
-     "correct":"Anti-trust",
-     "explanation":""
+     "correct": "Anti-trust",
+     "explanation": ""
     },
     {
      "id": 29,
-     "question":"An international company's consumers are demanding that the owners make socially ethical business decisions concerning their packaging, but the company is finding that the suggested green modifications are increasing the costs of producing the product. Which concern is this company facing by meeting these ethical demands?",
+     "question": "An international company's consumers are demanding that the owners make socially ethical business decisions concerning their packaging, but the company is finding that the suggested green modifications are increasing the costs of producing the product. Which concern is this company facing by meeting these ethical demands?",
      "choices": [
        "Decreased profitability",
        "Diminished community reputation",
        "Damaged local environment",
        "Decreased shareholder satisfaction"
       ],
-     "correct":"Decreased profitability",
-     "explanation":""
+     "correct": "Decreased profitability",
+     "explanation": ""
     },
     {
      "id": 30,
-     "question":"A business is entering a global market at the same time it has been trying to improve its level of corporate social responsibility (CSR). Which CSR goal should this company remember during this process?",
+     "question": "A business is entering a global market at the same time it has been trying to improve its level of corporate social responsibility (CSR). Which CSR goal should this company remember during this process?",
      "choices": [
        "Increase shareholder trust via high ethical standards",
        "Improve public trust in regions experiencing low profits from global competition",
        "Enhance shareholder value of global corporations through social marketing",
        "Expand corporate charitable giving in underserved communities"
       ],
-     "correct":"Increase shareholder trust via high ethical standards",
-     "explanation":""
+     "correct": "Increase shareholder trust via high ethical standards",
+     "explanation": ""
     },
     {
      "id": 31,
-     "question":"A company would like to expand its corporate social responsibility (CSR) initiatives to a global level. Which strategy should the company use to meet this goal?",
+     "question": "A company would like to expand its corporate social responsibility (CSR) initiatives to a global level. Which strategy should the company use to meet this goal?",
      "choices": [
        "Improve manufacturing processes for local workers",
        "Engage stakeholders on the issue of air quality",
        "Provide city charities with the funds to continue community activities",
        "Invite high school students to the company headquarters to explore careers"
       ],
-     "correct":"Engage stakeholders on the issue of air quality",
-     "explanation":""
+     "correct": "Engage stakeholders on the issue of air quality",
+     "explanation": ""
     },
     {
      "id": 32,
-     "question":"An individual is encouraged to provide a small, quiet fee to local officials to get some critical work done overseas for a global office. The individual was told that this would greatly expedite the work. The individual took that advice, and the work was completed, but the manager in the United States was upset with the action and called the individual to discuss the matter. What is the most challenging aspect of this individual's ethical dilemma?",
+     "question": "An individual is encouraged to provide a small, quiet fee to local officials to get some critical work done overseas for a global office. The individual was told that this would greatly expedite the work. The individual took that advice, and the work was completed, but the manager in the United States was upset with the action and called the individual to discuss the matter. What is the most challenging aspect of this individual's ethical dilemma?",
      "choices": [
        "The manager is being influenced by personal perceptions of ethics.",
        "Ethical behaviors are not standardized across the world.",
        "Unethical practices are common outside the United States.",
        "The ethical actions observed in business are universal by human nature."
       ],
-     "correct":"Ethical behaviors are not standardized across the world.",
-     "explanation":""
+     "correct": "Ethical behaviors are not standardized across the world.",
+     "explanation": ""
     },
     {
      "id": 33,
-     "question":"A CEO of a multinational corporation tells employees that they are expected to follow the organization's values, remember the mission, and adapt behaviors to be in alignment with the vision and mission, regardless of the situation. Which ethical standard is being stressed by this company?",
+     "question": "A CEO of a multinational corporation tells employees that they are expected to follow the organization's values, remember the mission, and adapt behaviors to be in alignment with the vision and mission, regardless of the situation. Which ethical standard is being stressed by this company?",
      "choices": [
        "Transparency",
        "Code of ethics",
        "Corporate social responsibility",
        "Ethical resolutions"
       ],
-     "correct":"Code of ethics",
-     "explanation":""
+     "correct": "Code of ethics",
+     "explanation": ""
     },
     {
      "id": 34,
-     "question":"An international company has employees divided into departments related to designated areas of the business, such as marketing, production, human resources, information technology, and customer service. What is the organizational structure of this company?",
+     "question": "An international company has employees divided into departments related to designated areas of the business, such as marketing, production, human resources, information technology, and customer service. What is the organizational structure of this company?",
      "choices": [
        "Teams",
        "Matrix",
        "Divisional",
        "Functional"
       ],
-     "correct":"Functional",
-     "explanation":""
+     "correct": "Functional",
+     "explanation": ""
     },
     {
      "id": 35,
-     "question":"Which organizational structure is common in international high-tech and engineering firms that have projects of limited lengths of time where employees can be put on different teams to maximize ingenuity?",
+     "question": "Which organizational structure is common in international high-tech and engineering firms that have projects of limited lengths of time where employees can be put on different teams to maximize ingenuity?",
      "choices": [
        "Departmental",
        "Matrix",
        "Divisional",
        "Functional"
       ],
-     "correct":"Matrix",
-     "explanation":""
+     "correct": "Matrix",
+     "explanation": ""
     },
     {
      "id": 36,
-     "question":"Which organizational structure helps increase employee creativity, productivity, and mutual accountability?",
+     "question": "Which organizational structure helps increase employee creativity, productivity, and mutual accountability?",
      "choices": [
        "Teams",
        "Matrix",
        "Divisional",
        "Departmental"
       ],
-     "correct":"Teams",
-     "explanation":""
+     "correct": "Teams",
+     "explanation": ""
     },
     {
      "id": 37,
-     "question":"A global household appliance company competes in three areas: washers, dryers, and refrigerators. Which type of departmentalization does this company use?",
+     "question": "A global household appliance company competes in three areas: washers, dryers, and refrigerators. Which type of departmentalization does this company use?",
      "choices": [
        "Product",
        "Market",
        "Geographic",
        "Functional"
       ],
-     "correct":"Product",
-     "explanation":""
+     "correct": "Product",
+     "explanation": ""
     },
     {
      "id": 38,
-     "question":"A multinational corporation (MNC) with headquarters in the United States is seeking to limit its supply chain to U.S. companies so that decision-making authority is localized at the highest level of the organization. What is a result of using this decision-making structure?",
+     "question": "A multinational corporation (MNC) with headquarters in the United States is seeking to limit its supply chain to U.S. companies so that decision-making authority is localized at the highest level of the organization. What is a result of using this decision-making structure?",
      "choices": [
        "Economies of scale are achieved.",
        "Economies of scope are decreased.",
        "There is increased consistency in operations.",
        "There is increased perception of fairness with suppliers."
       ],
-     "correct":"There is increased consistency in operations.",
-     "explanation":""
+     "correct": "There is increased consistency in operations.",
+     "explanation": ""
     },
     {
      "id": 39,
-     "question":"A company wants to hold a direct operating presence in a foreign country, so it buys a company in the target country and runs the operations. Which type of business agreement is this company using?",
+     "question": "A company wants to hold a direct operating presence in a foreign country, so it buys a company in the target country and runs the operations. Which type of business agreement is this company using?",
      "choices": [
        "Franchising",
        "Licensing",
        "Joint venture",
        "Subsidiary"
       ],
-     "correct":"Subsidiary",
-     "explanation":""
+     "correct": "Subsidiary",
+     "explanation": ""
     },
     {
      "id": 40,
-     "question":"A multinational beverage company decides to export products into a new market in order to grow its business. Exporting products was determined to be one of the cheapest methods of market entry for this company; however, the company realizes there are some disadvantages to exporting. Which challenge is this company likely facing by exporting its products?",
+     "question": "A multinational beverage company decides to export products into a new market in order to grow its business. Exporting products was determined to be one of the cheapest methods of market entry for this company; however, the company realizes there are some disadvantages to exporting. Which challenge is this company likely facing by exporting its products?",
      "choices": [
        "Costs of transporting goods is high.",
        "Costs of advertising is too expensive.",
        "The company loses control over product quality.",
        "The company has to share intellectual property rights with the distributor."
       ],
-     "correct":"Costs of transporting goods is high.",
-     "explanation":""
+     "correct": "Costs of transporting goods is high.",
+     "explanation": ""
     },
     {
      "id": 41,
-     "question":"A multinational company hires a distributor to manage the distribution of products in a new international market that it recently entered. Which entry strategy is the company using?",
+     "question": "A multinational company hires a distributor to manage the distribution of products in a new international market that it recently entered. Which entry strategy is the company using?",
      "choices": [
        "Exporting",
        "Franchising",
        "Joint venture",
        "Direct investments"
       ],
-     "correct":"Exporting",
-     "explanation":""
+     "correct": "Exporting",
+     "explanation": ""
     },
     {
      "id": 42,
-     "question":"A company located in the United States ships its products to a country overseas. Frequent bad weather causes significant delays, thus leading to reduced profits. As a result, the company wants to encourage leadership to consider adding a location in this overseas country. Which strategy solves this problem?",
+     "question": "A company located in the United States ships its products to a country overseas. Frequent bad weather causes significant delays, thus leading to reduced profits. As a result, the company wants to encourage leadership to consider adding a location in this overseas country. Which strategy solves this problem?",
      "choices": [
        "Market growth",
        "Flexible sourcing",
        "Economies of scale",
        "Decentralized manufacturing"
       ],
-     "correct":"Decentralized manufacturing",
-     "explanation":""
+     "correct": "Decentralized manufacturing",
+     "explanation": ""
     },
     {
      "id": 43,
-     "question":"As a company enters a foreign market, it provides assets, takes on all of the responsibility, and assumes significant risk. What is this market entry strategy?",
+     "question": "As a company enters a foreign market, it provides assets, takes on all of the responsibility, and assumes significant risk. What is this market entry strategy?",
      "choices": [
        "Exporting",
        "Franchising",
        "Greenfield venture",
        "Joint venture"
       ],
-     "correct":"Greenfield venture",
-     "explanation":""
+     "correct": "Greenfield venture",
+     "explanation": ""
     },
     {
      "id": 44,
-     "question":"A company has entered several foreign markets and maintains the same branding in all of them. What is the term for this marketing strategy?",
+     "question": "A company has entered several foreign markets and maintains the same branding in all of them. What is the term for this marketing strategy?",
      "choices": [
        "Adaptation",
        "Standardization",
        "Expansion",
        "Glocalization"
       ],
-     "correct":"Standardization",
-     "explanation":""
+     "correct": "Standardization",
+     "explanation": ""
     },
     {
      "id": 45,
-     "question":"A company would like to have a direct operating presence in a foreign country. The company is concerned about being exposed to the highest levels of risk and a slow market entry. Which entry strategy is the company concerned about?",
+     "question": "A company would like to have a direct operating presence in a foreign country. The company is concerned about being exposed to the highest levels of risk and a slow market entry. Which entry strategy is the company concerned about?",
      "choices": [
        "Franchising",
        "Joint venture",
        "Acquisition",
        "Subsidiary"
       ],
-     "correct":"Subsidiary",
-     "explanation":""
+     "correct": "Subsidiary",
+     "explanation": ""
     },
     {
      "id": 46,
-     "question":"Which national cultural dimension refers to how agreeably a society accepts hierarchical differences between people in the global workplace?",
+     "question": "Which national cultural dimension refers to how agreeably a society accepts hierarchical differences between people in the global workplace?",
      "choices": [
        "Power distance",
        "Masculinity",
        "Uncertainty avoidance",
        "Long-term orientation"
       ],
-     "correct":"Power distance",
-     "explanation":""
+     "correct": "Power distance",
+     "explanation": ""
     },
     {
      "id": 47,
-     "question":"Which national cultural dimension in global business refers to the amount of ambiguity a society is willing to accept?",
+     "question": "Which national cultural dimension in global business refers to the amount of ambiguity a society is willing to accept?",
      "choices": [
        "Uncertainty avoidance",
        "Long-term orientation",
        "Power distance",
        "Masculinity"
       ],
-     "correct":"Uncertainty avoidance",
-     "explanation":""
+     "correct": "Uncertainty avoidance",
+     "explanation": ""
     },
     {
      "id": 48,
-     "question":"Which national cultural dimension in global business refers to people's inclination to take care of themselves and their close circle of family and friends, often at the cost of the whole society?",
+     "question": "Which national cultural dimension in global business refers to people's inclination to take care of themselves and their close circle of family and friends, often at the cost of the whole society?",
      "choices": [
        "Individualistic",
        "Uncertainty avoidance",
        "Long-term orientation",
        "Power distance"
       ],
-     "correct":"Individualistic",
-     "explanation":""
+     "correct": "Individualistic",
+     "explanation": ""
     },
     {
      "id": 49,
-     "question":"A senior manager from the head office of a company based in the United States is assigned to work in its overseas office in Indonesia where significant emphasis is placed on workplace harmony. The manager ensures that the local culture and language is understood and is often perceived as an insider who follows the normal traditions. How will the cultural dimensions of the local country influence the manager's evaluation?",
+     "question": "A senior manager from the head office of a company based in the United States is assigned to work in its overseas office in Indonesia where significant emphasis is placed on workplace harmony. The manager ensures that the local culture and language is understood and is often perceived as an insider who follows the normal traditions. How will the cultural dimensions of the local country influence the manager's evaluation?",
      "choices": [
        "The senior manager would be given a very favorable performance evaluation.",
        "The local employees would refuse to evaluate the performance of an expatriate manager.",
        "The senior manager would be given a very harsh performance evaluation.",
        "The local employees would have difficulty understanding the process and language of the evaluation."
       ],
-     "correct":"The senior manager would be given a very favorable performance evaluation.",
-     "explanation":""
+     "correct": "The senior manager would be given a very favorable performance evaluation.",
+     "explanation": ""
     },
     {
      "id": 50,
-     "question":"An employee for a global technology company was assigned to the overseas office in Asia. Once the assignment was completed, the employee experienced disorientation in repatriating to the head office in the United States. What caused this disorientation?",
+     "question": "An employee for a global technology company was assigned to the overseas office in Asia. Once the assignment was completed, the employee experienced disorientation in repatriating to the head office in the United States. What caused this disorientation?",
      "choices": [
        "Changes in work culture and customs",
        "Loss of pay and benefits",
        "Lack of consistency in work dynamics",
        "Changes in time zones between countries"
       ],
-     "correct":"Changes in work culture and customs",
-     "explanation":""
+     "correct": "Changes in work culture and customs",
+     "explanation": ""
     },
     {
      "id": 51,
-     "question":"Human resources policies are determined by how a particular global company decides to oversee its diverse workforce. What is a disadvantage of using this polycentric approach?",
+     "question": "Human resources policies are determined by how a particular global company decides to oversee its diverse workforce. What is a disadvantage of using this polycentric approach?",
      "choices": [
        "Decisions are made by the home office in a top-down approach.",
        "Staff members need an adjustment period to the new culture.",
        "There is less flexibility in adjusting to changing local conditions.",
        "It is possible there are dual demands for shared resources."
       ],
-     "correct":"It is possible there are dual demands for shared resources.",
-     "explanation":""
+     "correct": "It is possible there are dual demands for shared resources.",
+     "explanation": ""
     },
     {
      "id": 52,
-     "question":"A computer technology company has several factories in three countries. The headquarters introduces steps in the manufacturing process so that waste decreases dramatically. Which supply chain practice is this company using to optimize production efficiency?",
+     "question": "A computer technology company has several factories in three countries. The headquarters introduces steps in the manufacturing process so that waste decreases dramatically. Which supply chain practice is this company using to optimize production efficiency?",
      "choices": [
        "Lean manufacturing",
        "Refined logistic network",
        "Just-in-time",
        "Channel-spanning performance measures"
       ],
-     "correct":"Lean manufacturing",
-     "explanation":""
+     "correct": "Lean manufacturing",
+     "explanation": ""
     },
     {
      "id": 53,
-     "question":"A company is evaluating where it will locate its next facility to minimize its distribution shipping costs. Which factor must the company consider as part of this decision?",
+     "question": "A company is evaluating where it will locate its next facility to minimize its distribution shipping costs. Which factor must the company consider as part of this decision?",
      "choices": [
        "Value-to-weight ratio",
        "Minimum efficient scale",
        "Fixed costs",
        "Financial incentives"
       ],
-     "correct":"Value-to-weight ratio",
-     "explanation":""
+     "correct": "Value-to-weight ratio",
+     "explanation": ""
     },
     {
      "id": 54,
-     "question":"A multinational company sources the components for its products from multiple countries around the globe and assembles the final finished product locally in the country of sale. However the consumers in the local country do not prefer locally made goods. Which phenomenon is the company experiencing?",
+     "question": "A multinational company sources the components for its products from multiple countries around the globe and assembles the final finished product locally in the country of sale. However the consumers in the local country do not prefer locally made goods. Which phenomenon is the company experiencing?",
      "choices": [
        "Value chain effect",
        "Country-of-origin effect",
        "Mass customization effect",
        "Quality-of-localization effect"
       ],
-     "correct":"Country-of-origin effect",
-     "explanation":""
+     "correct": "Country-of-origin effect",
+     "explanation": ""
     },
     {
      "id": 55,
-     "question":"What is an advantage of using intermediaries in an indirect distribution channel?",
+     "question": "What is an advantage of using intermediaries in an indirect distribution channel?",
      "choices": [
        "It displays a sense of ownership of the products.",
        "It reduces up-front costs with the use of an existing channel.",
        "It controls the marketing efforts.",
        "It maintains the company's interests at the forefront."
       ],
-     "correct":"It reduces up-front costs with the use of an existing channel.",
-     "explanation":""
+     "correct": "It reduces up-front costs with the use of an existing channel.",
+     "explanation": ""
     },
     {
      "id": 56,
-     "question":"A new start-up company wants to connect directly with its consumers. How many layers of intermediaries should the company consider?",
+     "question": "A new start-up company wants to connect directly with its consumers. How many layers of intermediaries should the company consider?",
      "choices": [
        "0",
        "1",
        "2",
        "3"
       ],
-     "correct":"0",
-     "explanation":""
+     "correct": "0",
+     "explanation": ""
     },
     {
      "id": 57,
-     "question":"A company\u2019s distribution channel consists of a producer, a distributor, a retailer, and a consumer. What is a distribution channel with this structure called?",
+     "question": "A company\u2019s distribution channel consists of a producer, a distributor, a retailer, and a consumer. What is a distribution channel with this structure called?",
      "choices": [
        "Direct",
        "Indirect",
        "Complex",
        "Multi-level"
       ],
-     "correct":"Indirect",
-     "explanation":""
+     "correct": "Indirect",
+     "explanation": ""
     },
     {
      "id": 58,
-     "question":"Which form of funding requires a low cost of capital and does not require time to mature?",
+     "question": "Which form of funding requires a low cost of capital and does not require time to mature?",
      "choices": [
        "Loans",
        "Bonds",
        "Equity shares",
        "Angel investments"
       ],
-     "correct":"Loans",
-     "explanation":""
+     "correct": "Loans",
+     "explanation": ""
     },
     {
      "id": 59,
-     "question":"A manufacturing company in the United States acquired a small national supplier based in California. Which accounting method should the company use to record the acquisition?",
+     "question": "A manufacturing company in the United States acquired a small national supplier based in California. Which accounting method should the company use to record the acquisition?",
      "choices": [
        "Generally accepted accounting principles",
        "Financial accounting reporting standards",
        "International financial reporting standards",
        "General international accounting principles"
       ],
-     "correct":"Generally accepted accounting principles",
-     "explanation":""
+     "correct": "Generally accepted accounting principles",
+     "explanation": ""
     },
     {
      "id": 60,
-     "question":"How do banks and investors use financial statements?",
+     "question": "How do banks and investors use financial statements?",
      "choices": [
        "To decide whether to grant access to money",
        "To assess the marketing health of a company",
        "To recommend strategic partnerships",
        "To create plans for growth and expansion"
       ],
-     "correct":"To decide whether to grant access to money",
-     "explanation":""
+     "correct": "To decide whether to grant access to money",
+     "explanation": ""
     },
     {
      "id": 61,
-     "question":"A company wants to reduce the effects of currency fluctuations with its host country subsidiaries for the coming year. Which action should the company take?",
+     "question": "A company wants to reduce the effects of currency fluctuations with its host country subsidiaries for the coming year. Which action should the company take?",
      "choices": [
        "Use a forward contract",
        "Establish the price of a derivative",
        "Mitigate societal risks",
        "Accept hard policy risks"
       ],
-     "correct":"Use a forward contract",
-     "explanation":""
+     "correct": "Use a forward contract",
+     "explanation": ""
     },
     {
      "id": 62,
-     "question":"A multinational company uses transfer pricing to reduce its tax burden in the subsidiaries' countries. Which effect does this action have on subsidiaries?",
+     "question": "A multinational company uses transfer pricing to reduce its tax burden in the subsidiaries' countries. Which effect does this action have on subsidiaries?",
      "choices": [
        "Lowered profit",
        "Increased morale",
        "Reduced compliance",
        "Relaxed regulations"
       ],
-     "correct":"Lowered profit",
-     "explanation":""
+     "correct": "Lowered profit",
+     "explanation": ""
     },
     {
      "id": 63,
-     "question":"What is an example of a micro risk for multinational companies?",
+     "question": "What is an example of a micro risk for multinational companies?",
      "choices": [
        "Change in government leadership",
        "Government nationalization of assets",
        "Loss of intellectual property",
        "Presence of nationalistic movements"
       ],
-     "correct":"Government nationalization of assets",
-     "explanation":""
+     "correct": "Government nationalization of assets",
+     "explanation": ""
     },
     {
      "id": 64,
-     "question":"A community has the skills and ability to access computers and the internet but does not value that form of technology. A company is trying to change the situation in order to facilitate increased online transactions. Which stage of the digital divide is the company hoping to correct?",
+     "question": "A community has the skills and ability to access computers and the internet but does not value that form of technology. A company is trying to change the situation in order to facilitate increased online transactions. Which stage of the digital divide is the company hoping to correct?",
      "choices": [
        "Economic",
        "Usability",
        "Empowerment",
        "Accessibility"
       ],
-     "correct":"Empowerment",
-     "explanation":""
+     "correct": "Empowerment",
+     "explanation": ""
     },
     {
      "id": 65,
-     "question":"A global company wants to share and store business information online 24/7 for employees so they can access the items when they are not physically in the office. Which tool should the company use for this purpose?",
+     "question": "A global company wants to share and store business information online 24/7 for employees so they can access the items when they are not physically in the office. Which tool should the company use for this purpose?",
      "choices": [
        "Cloud-based file share",
        "Email attachments",
        "Social media pages",
        "Desktop publishing program"
       ],
-     "correct":"Cloud-based file share",
-     "explanation":""
+     "correct": "Cloud-based file share",
+     "explanation": ""
     },
     {
      "id": 66,
-     "question":"A manufacturing facility would like to consider the use of artificial intelligence deep learning. Which practice illustrates the use of this approach?",
+     "question": "A manufacturing facility would like to consider the use of artificial intelligence deep learning. Which practice illustrates the use of this approach?",
      "choices": [
        "Employees use fingerprint readers to enter doors.",
        "Machines become familiar with common defects in products.",
        "Items are sorted by bar codes before being packaged.",
        "Orders populate immediately as clients place them."
       ],
-     "correct":"Machines become familiar with common defects in products.",
-     "explanation":""
+     "correct": "Machines become familiar with common defects in products.",
+     "explanation": ""
     },
     {
      "id": 67,
-     "question":"A company is interested in working with the technology that will allow consumers to privately and securely store personal information such as social security and credit card numbers, making it accessible around the world. Which piece of technology is of interest to this company?",
+     "question": "A company is interested in working with the technology that will allow consumers to privately and securely store personal information such as social security and credit card numbers, making it accessible around the world. Which piece of technology is of interest to this company?",
      "choices": [
        "Blockchain",
        "Antivirus software",
        "Artificial intelligence",
        "Virtual reality"
       ],
-     "correct":"Blockchain",
-     "explanation":""
+     "correct": "Blockchain",
+     "explanation": ""
     },
     {
      "id": 68,
-     "question":"An international business experienced significant changes due to advances in global technology such as autonomous cars, 3D printing, biometrics, nanotechnology, and quantum computing. Which era caused this impact on the business?",
+     "question": "An international business experienced significant changes due to advances in global technology such as autonomous cars, 3D printing, biometrics, nanotechnology, and quantum computing. Which era caused this impact on the business?",
      "choices": [
        "Second Industrial Revolution",
        "Technology Revolution",
        "Fourth Industrial Revolution",
        "Market Revolution"
       ],
-     "correct":"Fourth Industrial Revolution",
-     "explanation":""
+     "correct": "Fourth Industrial Revolution",
+     "explanation": ""
     },
     {
      "id": 69,
-     "question":"An international company works with many economic sectors and notices that one sector in particular is slower to adopt artificial intelligence, which limits their opportunities on a global scale. Which economic sector shows this slower pace?",
+     "question": "An international company works with many economic sectors and notices that one sector in particular is slower to adopt artificial intelligence, which limits their opportunities on a global scale. Which economic sector shows this slower pace?",
      "choices": [
        "Financial services",
        "Healthcare",
        "Transportation",
        "Education"
       ],
-     "correct":"Education",
-     "explanation":""
+     "correct": "Education",
+     "explanation": ""
     },
     {
      "id": 70,
-     "question":"Workers at a company are struggling to efficiently address daily problems because the company's current information systems do not communicate across departments. What type of system should the company implement to solve this problem?",
+     "question": "Workers at a company are struggling to efficiently address daily problems because the company's current information systems do not communicate across departments. What type of system should the company implement to solve this problem?",
      "choices": [
        "Enterprise resource planning system",
        "Deep learning system",
        "Management information system",
        "Integrated software system"
       ],
-     "correct":"Enterprise resource planning system",
-     "explanation":""
+     "correct": "Enterprise resource planning system",
+     "explanation": ""
     }
   ]
 }
