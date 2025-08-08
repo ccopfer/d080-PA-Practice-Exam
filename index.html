@@ -169,6 +169,18 @@
       const q = quizData[qIdx];
       const radios = document.getElementsByName(`q${qIdx}`);
       radios.forEach(r => r.disabled = true);
+
+      const selected = document.getElementById(`q${qIdx}_c${choiceIdx}`);
+      const label = selected.closest("label");
+
+      if (choiceIdx === q.answer) {
+        label.style.backgroundColor = '#e8f5e9';
+        label.style.borderLeft = '5px solid #2e7d32';
+      } else {
+        label.style.backgroundColor = '#ffebee';
+        label.style.borderLeft = '5px solid #c62828';
+      }
+
       updateProgress();
     }
 
