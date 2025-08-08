@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Summary | D080 PA Practice Exam</title>
+  <style>
+    body {
+      font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
+      background-color: #f4f6f9;
+      color: #003058;
+      padding: 40px;
+      margin: 0;
+    }
+    h2 {
+      text-align: center;
+      color: #003058;
+      font-size: 2rem;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      background: #fff;
+      border: 2px dashed #003058;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 15px;
+      box-shadow: 2px 2px 8px rgba(0, 150, 136, 0.1);
+    }
+    .correct {
+      color: green;
+      font-weight: bold;
+    }
+    .incorrect {
+      color: red;
+      font-weight: bold;
+    }
+    p.score {
+      font-size: 1.25rem;
+      text-align: center;
+      font-weight: bold;
+      margin-top: 30px;
+    }
+    button {
+      display: block;
+      margin: 30px auto;
+      padding: 12px 24px;
+      font-size: 1rem;
+      background-color: #003058;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h2>Summary</h2>
+  <div id="summary-content"></div>
+
+  <script>
+    const { quizData, answers } = JSON.parse(localStorage.getItem('quizResults'));
+    let correct = 0;
+    const container = document.getElementById('summary-content');
+    const ul = document.createElement('ul');
+
+    quizData.forEach((q, i) => {
+      const userAnswer = answers[i] || 'No Answer';
+      const isCorrect = userAnswer.trim() === q.correct.trim();
+      if (isCorrect) correct++;
+      const li = document.createElement('li');
+      li.innerHTML = `<strong>Q${i + 1}:</strong> ${q.question}<br>
+        <strong>Your answer:</strong> <span class="${isCorrect ? 'correct' : 'incorrect'}">${userAnswer}</span><br>
+        <strong>Correct answer:</strong> ${q.correct}`;
+      ul.appendChild(li);
+    });
+
+    const percent = Math.round((correct / quizData.length) * 100);
+    const score = document.createElement('p');
+    score.className = 'score';
+    score.innerHTML = `Score: ${correct}/${quizData.length} (${percent}%)`;
+
+    const exportBtn = document.createElement('button');
+    exportBtn.textContent = 'Export Results';
+    exportBtn.onclick = () => {
+      let csv = 'Question,Your Answer,Correct Answer\n';
+      quizData.forEach((q, i) => {
+        const userAnswer = answers[i] || 'No Answer';
+        csv += `"${q.question}","${userAnswer}","${q.correct}"
+`;
+      });
+      const blob = new Blob([csv], { type: 'text/csv' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'quiz-results.csv';
+      a.click();
+      URL.revokeObjectURL(url);
+    };
+
+    container.appendChild(ul);
+    container.appendChild(score);
+    container.appendChild(exportBtn);
+  </script>
+</body>
+</html>
