@@ -134,9 +134,9 @@
       .then(data => {
         quizData = data.questions.sort(() => Math.random() - 0.5);
         quizData.forEach(q => {
-          const correct = q.choices[q.answer];
+          const correctText = q.correct || q.choices[q.answer];
           q.choices = q.choices.sort(() => Math.random() - 0.5);
-          q.answer = q.choices.indexOf(correct);
+          q.answer = q.choices.indexOf(correctText);
         });
         renderQuiz();
       });
