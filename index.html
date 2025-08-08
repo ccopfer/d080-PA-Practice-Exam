@@ -184,38 +184,40 @@
 
     document.getElementById('submit-button').addEventListener('click', () => {
       if (Object.keys(answers).length < quizData.length && !confirm('Some questions are unanswered. Submit anyway?')) return;
-      const summary = document.getElementById('summary');
       let correct = 0;
-      let html = '<h2>Summary</h2><ul>';
+      let html = '<!DOCTYPE html><html><head><title>Summary</title><style>body { font-family: Futura, Trebuchet MS, Arial, sans-serif; background: #f4f6f9; padding: 20px; } h2 { color: #003058; } li { margin-bottom: 15px; }</style></head><body>';
+      html += '<h2>Summary</h2><ul>';
       quizData.forEach((q, i) => {
         const userAnswer = answers[i] || 'No Answer';
         const isCorrect = userAnswer.trim() === q.correct.trim();
         if (isCorrect) correct++;
-        html += `<li><strong>Q${i + 1}:</strong> ${q.question}<br>
-        <strong>Your answer:</strong> ${userAnswer}<br>
-        <strong>Correct answer:</strong> ${q.correct}</li><br>`;
+        html += `<li><strong>Q${i + 1}:</strong> ${q.question}<br><strong>Your answer:</strong> ${userAnswer}<br><strong>Correct answer:</strong> ${q.correct}</li>`;
       });
       html += `</ul><p><strong>Score: ${correct}/${quizData.length} (${Math.round((correct / quizData.length) * 100)}%)</strong></p>`;
-      html += `<button onclick="exportResults()">Export Results</button>`;
-      summary.innerHTML = html;
-      summary.style.display = 'block';
-    });
+      html += `<button onclick="window.exportResults()">Export Results</button>`;
+      html += '</body></html>';
 
-    function exportResults() {
-      let csv = 'Question,Your Answer,Correct Answer\n';
-      quizData.forEach((q, i) => {
-        const userAnswer = answers[i] || 'No Answer';
-        csv += `"${q.question}","${userAnswer}","${q.correct}"
+      const win = window.open('', '_blank');
+      win.document.write(html);
+      win.document.close();
+
+      win.exportResults = function () {
+        let csv = 'Question,Your Answer,Correct Answer\n';
+        quizData.forEach((q, i) => {
+          const userAnswer = answers[i] || 'No Answer';
+          csv += `"${q.question}","${userAnswer}","${q.correct}"
 `;
-      });
-      const blob = new Blob([csv], { type: 'text/csv' });
-      const url = URL.createObjectURL(blob);
-      const a = document.createElement('a');
-      a.href = url;
-      a.download = 'quiz-results.csv';
-      a.click();
-      URL.revokeObjectURL(url);
-    }
+        });
+        const blob = new Blob([csv], { type: 'text/csv' });
+        const url = URL.createObjectURL(blob);
+        const a = win.document.createElement('a');
+        a.href = url;
+        a.download = 'quiz-results.csv';
+        win.document.body.appendChild(a);
+        a.click();
+        URL.revokeObjectURL(url);
+      }
+    });
 
     function scrollToTop() {
       window.scrollTo({ top: 0, behavior: 'smooth' });
